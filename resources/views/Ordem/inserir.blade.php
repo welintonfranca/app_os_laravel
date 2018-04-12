@@ -29,10 +29,7 @@
             <label for="endereco">Endereço: <span class="text-danger">*</span></label>
             <input type="text" id="endereco" name="endereco" class="form-control" autofocus required>
         </div>
-        <div class="form-group">
-            <label for="quantidade">Quantidade: <span class="text-danger">*</span></label>
-            <input type="number" id="quantidade" name="quantidade" class="form-control" required>
-        </div>
+
         <div class="form-group">
             <label for="telefone">Telefone: <span class="text-danger">*</span></label>
             <input type="text" id="telefone" name="telefone" class="form-control" autofocus required>

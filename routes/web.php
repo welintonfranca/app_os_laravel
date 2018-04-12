@@ -18,3 +18,4 @@ Route::get('/', function () {
 Route::get('/ordem/pesquisar', 'AbertaController@pesquisar');
 Route::post('/ordem/pesquisar', 'AbertaController@pesquisar');
 Route::get('/ordem/inserir', 'AbertaController@mostrar_inserir');
+Route::post('/ordem/inserir', 'AbertaController@inserir');

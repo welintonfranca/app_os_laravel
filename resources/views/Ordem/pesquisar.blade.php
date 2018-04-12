@@ -11,8 +11,8 @@
 <body>
 <div class="container">
     <h1 class="mt-2">Pesquisa de Ordem</h1>
-    @if(count($nome) == 0)
-        <div class="alert alert-danger mt-2">Nenhum produto encontrado com essa descrição!</div>
+    @if(count($ordem) == 0)
+        <div class="alert alert-danger mt-2">Nenhum ordem encontrado com esse nome!</div>
     @else
         <form action="/ordem/pesquisar" method="post" class="form-inline mt-2">
             <input type="hidden" name="_token" value="{{{csrf_token()}}}">

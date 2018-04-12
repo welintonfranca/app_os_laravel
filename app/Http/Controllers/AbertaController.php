@@ -21,10 +21,6 @@ class AbertaController extends Controller
 
 
 
-
-
-        // Chama a view produto.pesquisar e envia os produtos encontrados
-        return view('produto.pesquisar')->with('produtos', $produtos);
     }
     public function mostrar_inserir()
     {
@@ -50,6 +46,6 @@ class AbertaController extends Controller
         $mensagem = "O.S inserida com sucesso";
 
         // Chamando a view produto.inserir e enviando a mensagem criada
-        return view('aberta.inserir')->with('mensagem', $mensagem);
+        return view('ordem.inserir')->with('mensagem', $mensagem);
     }
 }
