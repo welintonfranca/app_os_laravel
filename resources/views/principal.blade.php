@@ -17,13 +17,13 @@
             <a class="nav-link disabled" href="#">Ordem de serviço</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Inserir</a>
+            <a class="nav-link" href="/ordem/inserir">Inserir</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">pesquisar</a>
+            <a class="nav-link" href="/ordem/pesquisar">pesquisar</a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="#">Alterar</a>
+            <a class="nav-link" href="/ordem/alterar">Alterar</a>
         </li>
 
     </ul>

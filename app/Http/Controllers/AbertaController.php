@@ -4,15 +4,31 @@ namespace App\Http\Controllers;
 
 use App\Aberta;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
 
 class AbertaController extends Controller
 {
     public function pesquisar()
     {
-        $ordem = Aberta::all();
-        foreach ($ordem as $ordem){
-            echo $ordem->nome . "<br>";
-        }
+        // Recebe o conteúdo elemento 'descricao' do formulário
+        $nome =Input::get('nome');
+
+        // Busca produtos com o conteúdo da $descricao
+        $ordem = Aberta::where('nome', 'like', '%'.$nome.'%')->get();
+
+        // Chama a view produto.pequisar e envia os produtos buscados
+        return view('ordem.pesquisar')->with('ordem', $ordem);
+
+
+
+
+
+        // Chama a view produto.pesquisar e envia os produtos encontrados
+        return view('produto.pesquisar')->with('produtos', $produtos);
+    }
+    public function mostrar_inserir()
+    {
+        return view('ordem.inserir');
     }
 
     public function inserir()

@@ -12,7 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('principal');
+    return view('welcome');
 });
 
-Route::get('/aberta/pesquisar', 'AbertaController@pesquisar');
+Route::get('/ordem/pesquisar', 'AbertaController@pesquisar');
+Route::post('/ordem/pesquisar', 'AbertaController@pesquisar');
+Route::get('/ordem/inserir', 'AbertaController@mostrar_inserir');
