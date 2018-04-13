@@ -19,7 +19,7 @@ class CreateAbertasTable extends Migration
             $table->string('descricao');
             $table->string('endereco');
             $table->string('telefone');
-            $table->string('problema constatado');
+            $table->string('problema_constatado');
             $table->decimal('valor', 15, 2);
             $table->date('data_abertura')->nullable();
             $table->date('data_fechamento');

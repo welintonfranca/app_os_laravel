@@ -12,10 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('principal');
 });
 
-Route::get('/ordem/pesquisar', 'AbertaController@pesquisar');
-Route::post('/ordem/pesquisar', 'AbertaController@pesquisar');
-Route::get('/ordem/inserir', 'AbertaController@mostrar_inserir');
-Route::post('/ordem/inserir', 'AbertaController@inserir');
+Route::get('/ordem/pesquisar', 'AbertaController@pesquisar')->middleware('auth');
+Route::post('/ordem/pesquisar', 'AbertaController@pesquisar')->middleware('auth');
+Route::get('/ordem/inserir', 'AbertaController@mostrar_inserir')->middleware('auth');
+Route::post('/ordem/inserir', 'AbertaController@inserir')->middleware('auth');
+Route::get('/ordem/alterar/{id}', 'AbertaController@mostrar_alterar')->middleware('auth');
+Route::post('/ordem/alterar', 'AbertaController@alterar')->middleware('auth');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');;

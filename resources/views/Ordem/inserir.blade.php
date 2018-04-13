@@ -1,3 +1,5 @@
+@extends('home')
+@section('conteudo')
 <!doctype html>
 <html lang="PT-BR">
 <head>
@@ -7,8 +9,26 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Inserir</title>
+    <style>
+        h1{font-size: 20px}
+
+
+    </style>
 </head>
 <body>
+<div class="container">
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <ul class="navbar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link" href="/ordem/inserir">Inserir</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/ordem/pesquisar">pesquisar</a>
+            </li>
+
+        </ul>
+    </nav>
 <div class="container">
     <h1 class="mt-2">Inserir produto</h1>
     @if(!empty($mensagem))
@@ -45,3 +65,4 @@
 </div>
 </body>
 </html>
+@stop

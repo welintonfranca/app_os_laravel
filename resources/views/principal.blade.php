@@ -1,4 +1,5 @@
 <?php $titulo = '';?>
+
 <!doctype html>
 <html lang="PT-BR">
 <head>
@@ -14,16 +15,13 @@
 <nav class="navbar navbar-expand-sm bg-light navbar-light">
     <ul class="navbar-nav">
         <li class="nav-item">
-            <a class="nav-link disabled" href="#">Ordem de serviço</a>
+            <a class="nav-link" href="#">Ordem de serviço</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="/ordem/inserir">Inserir</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="/ordem/pesquisar">pesquisar</a>
-        </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="/ordem/alterar">Alterar</a>
         </li>
 
     </ul>
